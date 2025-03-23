@@ -6,6 +6,13 @@ if (mobileMenuBtn && mobileMenu) {
   mobileMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
   });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenu.classList.remove('show');
+    }
+  });
 }
 
 // Form Validation
@@ -77,3 +84,25 @@ const yearSpan = document.getElementById('year');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Add active class to current page in navigation
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
+});

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio and blog showcasing my journey in Economics, Computer Science, and my diverse interests">
-    <meta name="keywords" content="economics student, computer science, formula 1, animation, personal blog">
-    <title>Bianca's Portfolio | Economics & Computer Science Student</title>
+    <meta name="description" content="Explore my interests in Formula 1, animated movies, escape rooms, and makeup artistry">
+    <meta name="keywords" content="formula 1, animated movies, escape rooms, makeup, hobbies">
+    <title>My Interests | Bianca's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -14,74 +14,95 @@
         <div class="container">
             <div class="nav-content">
                 <a href="index.html" class="logo">
-                    <span>My Portofolio</span>
                 </a>
                 <button class="mobile-menu-btn" aria-label="Toggle menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
                 </button>
                 <div class="nav-links">
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="interests.html">Interests</a>
+                    <a href="interests.html" class="active">Interests</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
             <div class="mobile-menu">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="interests.html">Interests</a>
+                <a href="interests.html" class="active">Interests</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content container">
-                <div class="hero-text">
-                    <h1>Hi, I'm Bianca</h1>
-                    <p>Economics & Computer Science student with a passion for Formula 1,
-                        animated movies, and creative problem-solving.</p>
-                    <a href="about.html" class="btn btn-primary">
-                        Get to Know Me
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                    </a>
-                </div>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Interests</h1>
+                <p>Beyond economics and computer science, here are the things that make me who I am.</p>
             </div>
         </section>
 
-        <section class="features">
+        <section class="interests">
             <div class="container">
-                <h2>What I Do</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                        <h3>Economics</h3>
-                        <p>Studying market dynamics, financial systems, and economic theories.
-                            Currently focusing on behavioral economics and market analysis.</p>
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <img src="assets/frm1.jpg" 
+                             alt="Formula 1 Racing"
+                             loading="lazy">
                     </div>
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
-                        <h3>Computer Science</h3>
-                        <p>Learning software development, algorithms, and data structures.
-                            Passionate about creating efficient and elegant solutions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-                        <h3>Interests</h3>
-                        <p>Formula 1 enthusiast, animation film buff, escape room solver,
-                            and makeup artist in training.</p>
+                    <div class="interest-content">
+                        <h2>Formula 1</h2>
+                        <p>My weekends revolve around race schedules! I'm fascinated by the perfect blend
+                            of engineering excellence, strategic thinking, and pure racing talent in F1.
+                            The technical innovations and split-second decisions make every race exciting.</p>
+                        <ul class="interest-highlights">
+                            <li>Favorite Track: Spa-Francorchamps</li>
+                            <li>Following F1 since: 2018</li>
+                            <li>Love analyzing race strategies</li>
+                            <li>Enjoy technical deep-dives into car development</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="cta">
-            <div class="container">
-                <h2>Let's Connect!</h2>
-                <p>Whether you want to discuss economics, coding, Formula 1, or just chat
-                    about the latest animated films, I'd love to hear from you.</p>
-                <a href="contact.html" class="btn btn-get-in-touch">Get in Touch</a>
+                <div class="interest-card reverse">
+                    <div class="interest-image">
+                        <img src="assets/mln.jpg" 
+                             alt="Animated Movies"
+                             loading="lazy">
+                    </div>
+                    <div class="interest-content">
+                        <h2>Animated Movies</h2>
+                        <p>Animation is the perfect medium for storytelling, combining artistry with
+                            narrative in ways that live-action can't match. I'm particularly drawn to
+                            how animated films can tackle complex themes while remaining accessible.</p>
+                        <ul class="interest-highlights">
+                            <li>Favorite Studios: Pixar, Studio Ghibli</li>
+                            <li>Love analyzing animation techniques</li>
+                            <li>Appreciate both 2D and 3D animation</li>
+                            <li>Collecting animation art books</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <img src="assets/pzl.jpg" 
+                             alt="Escape Room"
+                             loading="lazy">
+                    </div>
+                    <div class="interest-content">
+                        <h2>Escape Rooms</h2>
+                        <p>There's nothing quite like the thrill of solving a complex puzzle under
+                            pressure! Escape rooms combine my love for problem-solving with teamwork
+                            and creative thinking. Each room is a new adventure!</p>
+                        <ul class="interest-highlights">
+                            <li>Completed 15+ rooms</li>
+                            <li>Best time: 42 minutes</li>
+                            <li>Favorite themes: Mystery, Sci-fi</li>
+                            <li>Love organizing escape room team events</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
